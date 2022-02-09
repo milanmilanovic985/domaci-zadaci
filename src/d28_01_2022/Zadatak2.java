@@ -27,7 +27,7 @@ public class Zadatak2 {
 			driver.findElement(By.id("name")).sendKeys("Milan Milanovic");
 			driver.findElement(By.id("department")).sendKeys("QA");
 			driver.findElement(By.id("phone")).sendKeys("(060)111-222");
-			driver.findElement(By.xpath("(//*[@class='add'])[" + a + "]")).click();
+			driver.findElement(By.xpath("(//*[@class='add'])[last()]")).click();
 			
 			a++;
 			Thread.sleep(4000);
